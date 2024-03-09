@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+:root {
+  --main: #0a66c2;
+  --lessmain: #0a66c2b0;
+  --primary: #0f0f0f;
+  --color: #fdfdfd;
+  --new: #ffffff09;
+}
+a {
+  border: none !important;
+  outline: none !important;
+  text-decoration: none !important;
+  box-shadow: none !important;
+}
+*:focus,
+*:active {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.bg-main {
+  background-color: var(--main) !important;
+}
+.bg-lessmain {
+  background-color: var(--lessmain) !important;
+}
+.bg-primarys {
+  background-color: var(--primary) !important;
+}
+.bg-color {
+  background-color: var(--color) !important;
+}
+.text-main {
+  color: var(--main) !important;
+}
+.text-lessmain {
+  color: var(--lessmain) !important;
+}
+.text-primarys {
+  color: var(--primary) !important;
+}
+.text-color {
+  color: var(--color) !important;
+}
+.border-main {
+  border: 2px solid var(--main) !important;
+}
+.border-lessmain {
+  border: 2px solid var(--lessmain) !important;
+}
+.border-primarys {
+  border: 2px solid var(--primary) !important;
+}
+.border-color {
+  border: 2px solid var(--color) !important;
+}
+.text-gradient {
+  color: #0a66c2;
+  background-image: -webkit-linear-gradient(0deg, #1effb3, #8755f2, #0a66c2);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.bg-gradient {
+  background-image: -webkit-linear-gradient(
+    0deg,
+    #1effb3,
+    #8755f2,
+    #0a66c2
+  ) !important;
+}
+body {
+  background: rgb(0, 0, 0);
+
+  background-size: 100vw 100vh;
+}
+.Navbar .col-8 div {
+  cursor: pointer !important;
+}
+.Navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.941);
+}
+.mcard:hover .card-overlayer {
+  background-color: #00000000;
+  transition: 0.3s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mcard:hover .card-overlayer {
+  background-color: rgba(0, 0, 0, 0.673);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.card-img-overlay {
+  opacity: 0;
+  transition: 0.3s ease;
+  z-index: 5;
+  cursor: pointer;
+}
+.mcard:hover .card-img-overlay {
+  opacity: 1;
+}
+.myimg {
+  animation: myanimate 10s infinite linear;
+}
+@keyframes myanimate {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  overflow-x: hidden;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar {
+  display: none;
 }
