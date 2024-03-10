@@ -5,11 +5,11 @@ import Tilt from "react-parallax-tilt";
 function Card({ i, direction }) {
   return (
     <motion.div
-      className="mx-3 my-4 position-relative mcard"
+      className="mx-lg-3 px-lg-0 px-2 my-lg-4 my-3 position-relative mcard"
       initial={!direction ? { opacity: 0, x: -50 } : { opacity: 0, x: 50 }} // Initial opacity and scale
       whileInView={direction ? { opacity: 1, x: 0 } : { opacity: 1, x: 0 }}
       transition={{ duration: 1, delay: 0.6 }}
-      viewport={{ once: false }}
+      viewport={{ once: true }}
     >
       <Tilt tiltReverse={true} tiltMaxAngleX={7} tiltMaxAngleY={7}>
         {

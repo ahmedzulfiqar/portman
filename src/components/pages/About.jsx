@@ -1,16 +1,14 @@
 import React from "react";
 import video1 from "../media/Untitled design (1).mp4";
-import video2 from "../media/interne spiral.mov";
 import Spline from "@splinetool/react-spline";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
 import portfoliodata from "../data/portfoliodata";
 import { Link } from "react-router-dom";
-import { easeIn, motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 function About() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   return (
@@ -23,16 +21,30 @@ function About() {
         viewport={{ once: true }}
       >
         <div className="container h-100">
-          <div className="row m-0 h-100 align-items-center justify-content-center ">
-            <div className="col-8  text-center position-relative z-2">
-              <div className="display-1 pb-4 text-light fw-bolder text-uppercase">
+          <div className="row m-0 h-100 align-items-center justify-content-center py-lg-0  my-lg-0 ">
+            <div className="col-lg-8 col-12  text-center position-relative z-2">
+              <div className="display-1 pb-4 text-light fw-bolder text-uppercase d-md-block d-none">
                 Entered the
                 <span className="text-gradient display-1 fw-bolder text-uppercase">
                   {" "}
                   Spiral
                 </span>
               </div>
-              <p className="fs-5 text-light">
+              <div className="display-4 pb-4 pt-5 text-start text-light fw-bolder text-uppercase d-md-none d-block">
+                Entered the
+                <span className="text-gradient display-3 fw-bolder text-uppercase">
+                  {" "}
+                  Spiral
+                </span>
+              </div>
+              <p className="fs-5 text-light d-md-block d-none">
+                Welcome to a world where unusual doors of creativity open to
+                you. Immerse yourself in a world where different techniques are
+                combined, such as digital and handmade. Delve deeper into the
+                sculptor's realm with materials as varied as plaster and clay,
+                where every stroke and visual brings your imagination to life.
+              </p>
+              <p className="text-start text-light small d-md-none d-block">
                 Welcome to a world where unusual doors of creativity open to
                 you. Immerse yourself in a world where different techniques are
                 combined, such as digital and handmade. Delve deeper into the
@@ -41,7 +53,7 @@ function About() {
               </p>
               <a className="btn" href="#section2">
                 <i
-                  class="fa fa-arrow-circle-down text-gradient display-3 mt-lg-5"
+                  class="fa fa-arrow-circle-down text-gradient display-3 mt-lg-5 mt-5"
                   aria-hidden="true"
                 ></i>
               </a>
@@ -67,11 +79,29 @@ function About() {
           </div>
         </div>
       </motion.div>
-      <div className=" vh-100" id="section2">
+      <div className=" vh-100 " id="section2">
         <div className="container h-100">
+          {" "}
+          <motion.video
+            onLoadedData={() => setIsVideoLoaded(true)}
+            src={video1}
+            loop={true}
+            autoPlay={true}
+            muted={true}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVideoLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 2, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
+            style={{
+              left: "-20%",
+            }}
+          />{" "}
           <div className="row m-0 h-100 align-items-center justify-content-center ">
             <motion.div
-              className="col-6 h-75  "
+              className="col-lg-6 col-12 d-lg-block d-none h-75  "
               initial={{ opacity: 0, scaleX: 1.5 }} // Initial opacity and scale
               whileInView={{ opacity: 1, scaleX: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
@@ -80,19 +110,19 @@ function About() {
               <Spline scene="https://prod.spline.design/5kbrU-TDRs1VM3ko/scene.splinecode" />
             </motion.div>{" "}
             <motion.div
-              className="col-6 ps-5"
+              className="col-lg-6 col-12 ps-lg-5 position-relative z-3"
               initial={{ opacity: 0, x: 50 }} // Initial opacity and scale
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
               viewport={{ once: true }}
             >
               <div className="display-5 pb-4 text-light fw-bolder text-uppercase">
-                <span className="text-gradient display-3 fw-bolder text-uppercase">
+                <span className="text-gradient position-relative z-3 display-3 fw-bolder text-uppercase">
                   {" "}
                   Edward Adventure
                 </span>
               </div>
-              <p className="fs-5 text-light">
+              <p className="fs-5 position-relative z-3 text-light">
                 I created a webseries in a post-apocaliptic world where such as
                 a boook where you are the hero the community can vote for the
                 next episode
@@ -126,9 +156,9 @@ function About() {
               <Swiper
                 grabCursor={true}
                 centeredSlides={true}
-                slidesPerView={"4"}
                 loop={true}
                 className="mySwiper py-5 mb-3"
+                slidesPerView={"auto"}
               >
                 {portfoliodata.map((i) => {
                   return (
