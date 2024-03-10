@@ -158,7 +158,7 @@ function About() {
                 centeredSlides={true}
                 loop={true}
                 className="mySwiper py-5 mb-3"
-                slidesPerView={"auto"}
+                slidesPerView={"4"}
               >
                 {portfoliodata.map((i) => {
                   return (
