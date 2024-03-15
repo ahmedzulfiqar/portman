@@ -15,7 +15,11 @@ function App() {
       <div className="row m-0">
         {loading ? (
           <div className="bg-black absolute">
-            <img src={image1} alt="" className="img-fluid  mx-auto w-25 absolute2" />
+            <img
+              src={image1}
+              alt=""
+              className="img-fluid  mx-auto w-25 absolute2"
+            />
           </div>
         ) : (
           <Routerfile />
