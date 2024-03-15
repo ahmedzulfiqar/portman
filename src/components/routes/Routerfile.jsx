@@ -6,6 +6,7 @@ import Footer from "../blocks/Footer";
 import Portfolio from "../pages/Portfolio";
 import About from "../pages/About";
 import image1 from "../media/428451987_931471568641067_2922994258616064842_n (1).png";
+import Contact from "../pages/Contact";
 function Routerfile() {
   const { pathname } = useLocation();
 
@@ -23,6 +24,7 @@ function Routerfile() {
               <Route path="/home" element={<Home />} />
               <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
          

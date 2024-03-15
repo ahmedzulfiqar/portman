@@ -49,6 +49,24 @@ function Portfolio() {
               left: "-25%",
               top: 0,
             }}
+          />{" "}
+          <motion.video
+            onLoadedData={() => setIsVideoLoaded(true)}
+            src={video1}
+            loop={true}
+            autoPlay={true}
+            muted={true}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVideoLoaded ? { opacity: 1, x: -20 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 2, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="position-absolute z-0 img-fluid w-50 mx-auto"
+            style={{
+              left: "-25%",
+              top: "25%",
+            }}
           />
           <motion.video
             onLoadedData={() => setIsVideoLoaded(true)}
@@ -67,6 +85,24 @@ function Portfolio() {
               right: "-20%",
               bottom: "50%",
             }}
+          />{" "}
+          <motion.video
+            onLoadedData={() => setIsVideoLoaded(true)}
+            src={video1}
+            loop={true}
+            autoPlay={true}
+            muted={true}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVideoLoaded ? { opacity: 1, x: -20 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 2, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="position-absolute z-0 d-md-block d-none img-fluid w-50 mx-auto"
+            style={{
+              right: "-20%",
+              bottom: "75%",
+            }}
           />
           <motion.video
             onLoadedData={() => setIsVideoLoaded(true)}
@@ -84,6 +120,24 @@ function Portfolio() {
             style={{
               left: "-25%",
               bottom: 0,
+            }}
+          />{" "}
+          <motion.video
+            onLoadedData={() => setIsVideoLoaded(true)}
+            src={video1}
+            loop={true}
+            autoPlay={true}
+            muted={true}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVideoLoaded ? { opacity: 1, x: -20 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 2, delay: 0.3 }}
+            viewport={{ once: false }}
+            className="position-absolute z-0 img-fluid w-50 mx-auto"
+            style={{
+              left: "-25%",
+              bottom: '25%',
             }}
           />
         </div>

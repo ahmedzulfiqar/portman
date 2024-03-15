@@ -4,7 +4,7 @@ function Footer() {
   return (
     <motion.div
       className="Navbar py-4 fixed-bottom "
-      initial={{ opacity: 0, y: 50 }} 
+      initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, delay: 0.6 }}
       viewport={{ once: true }}
@@ -18,15 +18,24 @@ function Footer() {
           </div>
           <div className="col-md-8 col-12 justify-content-md-end justify-content-center align-self-center">
             <div className="d-flex justify-content-md-end justify-content-center">
-              <div className="fs-3 text-gradient  fw-normal   fw-light px-3 mx-1 py-2">
+              <a
+                className="fs-3 text-gradient  fw-normal   fw-light px-3 mx-1 py-2"
+                href="https://www.instagram.com/remi_portmann/"
+              >
                 <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-              </div>
-              <div className="fs-3 text-gradient  fw-normal   px-3 mx-1 py-2">
+              </a>
+              <a
+                className="fs-3 text-gradient  fw-normal   px-3 mx-1 py-2"
+                href="https://www.facebook.com/remi.portmann.7"
+              >
                 <i class="fa-brands fa-facebook" aria-hidden="true"></i>
-              </div>
-              <div className="fs-3 text-gradient  fw-normal  px-3 mx-1 py-2">
+              </a>
+              <a
+                className="fs-3 text-gradient  fw-normal  px-3 mx-1 py-2"
+                href="https://www.linkedin.com/in/r%C3%A9mi-portmann-380b09200/"
+              >
                 <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
-              </div>
+              </a>
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Routerfile from "./components/routes/Routerfile";
-
+import image1 from "./components/media/jap.png";
 function App() {
   const [loading, setloading] = useState(false);
   useEffect(() => {
@@ -15,10 +15,7 @@ function App() {
       <div className="row m-0">
         {loading ? (
           <div className="bg-black absolute">
-            <div class="loader">
-              <span className="display-1 fw-bolder">PORTMANN</span>
-              <span className="display-1 fw-bolder">PORTMANN</span>
-            </div>
+            <img src={image1} alt="" className="img-fluid  mx-auto w-25 absolute2" />
           </div>
         ) : (
           <Routerfile />

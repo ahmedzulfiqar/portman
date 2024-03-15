@@ -59,9 +59,9 @@ function Header() {
               >
                 About
               </Link>
-              <div className="fs-5 fw-normal text-white px-4 ms-5 bg-gradient py-2 border border-0 mainbtn align-self-center rounded-2">
+              <Link className="fs-5 fw-normal text-white px-4 ms-5 bg-gradient py-2 border border-0 mainbtn align-self-center rounded-2" to={'/contact'}>
                 Contact
-              </div>
+              </Link>
             </div>
           </div>
           <div className="col-6 d-lg-none d-block d-flex justify-content-end align-self-center">

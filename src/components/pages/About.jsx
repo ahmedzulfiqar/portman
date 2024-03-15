@@ -107,7 +107,7 @@ function About() {
               transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
             >
-              <Spline scene="https://prod.spline.design/5kbrU-TDRs1VM3ko/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/ALphKMEd51vtlgWx/scene.splinecode" />
             </motion.div>{" "}
             <motion.div
               className="col-lg-6 col-12 ps-lg-5 position-relative z-3"
@@ -127,9 +127,12 @@ function About() {
                 a boook where you are the hero the community can vote for the
                 next episode
               </p>
-              <div className="btn btn-lg mt-2 bg-gradient rounded-1 border-0 btn-primary">
+              <a
+                className="btn btn-lg mt-2 bg-gradient rounded-1 border-0 btn-primary"
+                href="https://www.youtube.com/@Enterintothespiral"
+              >
                 Visit Now
-              </div>
+              </a>
             </motion.div>
           </div>
         </div>
