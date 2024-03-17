@@ -80,50 +80,5 @@ const portfoliodata = [
       "https://cdnb.artstation.com/p/assets/images/images/032/911/683/large/remi-dtiys-tess.jpg?1607860780",
     name: " Croc or deal Collection",
   },
-  {
-    image:
-      "https://cdna.artstation.com/p/assets/images/images/039/765/728/large/batslayeur-batou.jpg?1626874790",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdnb.artstation.com/p/assets/images/images/038/726/431/large/portmann-remi-fan-art-dont-hug-me.jpg?1623881820",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdnb.artstation.com/p/assets/images/images/037/750/855/large/portmann-remi-16.jpg?1621243740",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdna.artstation.com/p/assets/images/images/032/440/002/large/remi-capture-d-ecran-56.jpg?1606435270",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdnb.artstation.com/p/assets/images/images/033/874/239/large/portmann-remi-untitled.jpg?1610791711",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdna.artstation.com/p/assets/images/images/032/464/030/large/remi-untitled-1-ng.jpg?1606509883",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdna.artstation.com/p/assets/images/images/037/110/798/large/portmann-remi-img-20210416-231630-424.jpg?1619524084",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdna.artstation.com/p/assets/images/images/036/100/088/large/portmann-remi-beast-boy-dirty.jpg?1616711527",
-    name: " Croc or deal Collection",
-  },
-  {
-    image:
-      "https://cdna.artstation.com/p/assets/images/images/034/316/484/large/portmann-remi-0.jpg?1611963494",
-    name: " Croc or deal Collection",
-  },
 ];
 export default portfoliodata;

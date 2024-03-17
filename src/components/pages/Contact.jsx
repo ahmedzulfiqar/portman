@@ -40,7 +40,7 @@ function Contact() {
             <div className="fs-3 mt-lg-4 text-light d-md-block d-none">
               Contact us on Email
             </div>
-            <div className="fs-5 mt-lg-4 text-light d-md-none d-block">
+            <div className="fs-5 mt-lg-4 text-light d-md-none d-none">
               Contact us on Email
             </div>
             <div className="fs-4 text-gradient mt-1 d-md-block d-none">
@@ -60,7 +60,7 @@ function Contact() {
             <div className="fs-3 mt-lg-4 text-light  d-md-block d-none">
               Contact us by phone.
             </div>
-            <div className="fs-5 mt-lg-4 text-light  d-md-none d-block">
+            <div className="fs-5 mt-lg-4 text-light  d-md-none d-none">
               Contact us by phone.
             </div>
             <div className="fs-4 text-gradient mt-1  d-md-block d-none">
@@ -79,7 +79,13 @@ function Contact() {
             transition={{ duration: 1, delay: 2 }}
             viewport={{ once: true }}
           >
-            <video src={video1} loop={true} muted autoPlay={true} className="img-fluid"></video>
+            <video
+              src={video1}
+              loop={true}
+              muted
+              autoPlay={true}
+              className="img-fluid"
+            ></video>
           </motion.div>
         </div>
       </div>

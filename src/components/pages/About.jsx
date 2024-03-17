@@ -124,12 +124,13 @@ function About() {
               </div>
               <p className="fs-5 position-relative z-3 text-light">
                 I created a webseries in a post-apocaliptic world where such as
-                a boook where you are the hero the community can vote for the
+                a book where you are the hero the community can vote for the
                 next episode
               </p>
               <a
                 className="btn btn-lg mt-2 bg-gradient rounded-1 border-0 btn-primary"
-                href="https://www.youtube.com/@Enterintothespiral"
+                href="
+                https://www.youtube.com/playlist?list=PLNWhR_7RPhMeryyyk89qfUhyWiiDSSNs_"
               >
                 Visit Now
               </a>
