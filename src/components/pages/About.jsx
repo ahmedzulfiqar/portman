@@ -70,7 +70,25 @@ function About() {
               }
               transition={{ duration: 2, delay: 0.3 }}
               viewport={{ once: true }}
-              className="position-absolute z-0 img-fluid w-50 mx-auto"
+              className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
+              style={{
+                left: "25%",
+                top: "5%",
+              }}
+            />
+            <motion.video
+              onLoadedData={() => setIsVideoLoaded(true)}
+              src={video1}
+              loop={true}
+              autoPlay={true}
+              muted={true}
+              initial={{ opacity: 0, x: -100 }}
+              animate={
+                isVideoLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+              }
+              transition={{ duration: 2, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="position-absolute z-0 img-fluid w-50 mx-auto d-md-block d-none"
               style={{
                 left: "-25%",
                 top: 0,
@@ -96,7 +114,7 @@ function About() {
             viewport={{ once: true }}
             className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
             style={{
-              left: "-20%",
+              left: "20%",
             }}
           />{" "}
           <div className="row m-0 h-100 align-items-center justify-content-center ">
@@ -123,9 +141,8 @@ function About() {
                 </span>
               </div>
               <p className="fs-5 position-relative z-3 text-light">
-                I created a webseries in a post-apocaliptic world where such as
-                a book where you are the hero the community can vote for the
-                next episode
+                I created a webserie in a post apocalyptique world where such as
+                a book where you are the hero you can vote for the next épisode
               </p>
               <a
                 className="btn btn-lg mt-2 bg-gradient rounded-1 border-0 btn-primary"
