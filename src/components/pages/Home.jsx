@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import video1 from "../media/Untitled design (1).mp4";
 import Spline from "@splinetool/react-spline";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 function Home() {
+  const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   return (
     <div className="Home">
       <div className="container">
@@ -10,8 +12,27 @@ function Home() {
           className="row m-0 align-items-center justify-content-between"
           style={{ minHeight: "95vh", height: "95vh" }}
         >
+          {" "}
+          <motion.video
+            onLoadedData={() => setIsVideoLoaded(true)}
+            src={video1}
+            loop={true}
+            autoPlay={true}
+            muted={true}
+            initial={{ opacity: 0, x: -100 }}
+            animate={
+              isVideoLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+            }
+            transition={{ duration: 2, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
+            style={{
+              left: "25%",
+              top: "8%",
+            }}
+          />
           <motion.div
-            className="col-lg-6 col-12 px-lg-3 px-0"
+            className="col-lg-6 col-12 px-lg-3 px-0 position-relative z-3"
             initial={{ opacity: 0, x: -100 }} // Initial opacity and scale
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.4 }}
