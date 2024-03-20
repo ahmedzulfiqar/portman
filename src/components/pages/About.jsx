@@ -179,7 +179,21 @@ function About() {
                 centeredSlides={true}
                 loop={true}
                 className="mySwiper py-5 mb-3"
-                slidesPerView={"4"}
+                slidesPerView={"1"}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                  },
+                }}
               >
                 {portfoliodata.map((i) => {
                   return (
