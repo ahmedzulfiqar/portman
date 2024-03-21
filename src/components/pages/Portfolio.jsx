@@ -32,24 +32,7 @@ function Portfolio() {
               </span>
             </div>
           </motion.div>{" "}
-          <motion.video
-            onLoadedData={() => setIsVideoLoaded(true)}
-            src={video1}
-            loop={true}
-            autoPlay={true}
-            muted={true}
-            initial={{ opacity: 0, x: -100 }}
-            animate={
-              isVideoLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
-            }
-            transition={{ duration: 2, delay: 0.3 }}
-            viewport={{ once: false }}
-            className="position-absolute img-fluid w-50 mx-auto"
-            style={{
-              left: "25%",
-              top: "0%",
-            }}
-          />{" "}
+        
           <motion.video
             onLoadedData={() => setIsVideoLoaded(true)}
             src={video1}
