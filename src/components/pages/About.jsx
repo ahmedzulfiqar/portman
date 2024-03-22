@@ -141,15 +141,18 @@ function About() {
                 </span>
               </div>
               <p className="fs-5 position-relative z-3 text-light">
-                I created a webserie in a post apocalyptique world where such as
-                a book where you are the hero you can vote for the next épisode
+                I created an interactive post apocalyptic webserie. Realised
+                from different animation technique like 3d and stop motion. You
+                will be immersed in this universe next to edward, where you can
+                choose your path as in a book of which you are the hero. Every
+                first of the month a new episode is published.
               </p>
               <a
                 className="btn btn-lg mt-2 bg-gradient rounded-1 border-0 btn-primary"
                 href="
                 https://www.youtube.com/playlist?list=PLNWhR_7RPhMeryyyk89qfUhyWiiDSSNs_"
               >
-                Visit Now
+                Watch It
               </a>
             </motion.div>
           </div>
