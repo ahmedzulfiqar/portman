@@ -28,7 +28,7 @@ function Home() {
             className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
             style={{
               left: "25%",
-              top: "8%",
+              top: "5%",
             }}
           />
           <motion.div

@@ -73,7 +73,7 @@ function About() {
               className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
               style={{
                 left: "25%",
-                top: "10%",
+                top: "5%",
               }}
             />
             <motion.video
@@ -115,6 +115,7 @@ function About() {
             className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
             style={{
               left: "20%",
+              marginTop: "-10%",
             }}
           />{" "}
           <div className="row m-0 h-100 align-items-center justify-content-center ">
