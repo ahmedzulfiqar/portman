@@ -43,7 +43,7 @@ function Portfolio() {
             }
             transition={{ duration: 2, delay: 0.3 }}
             viewport={{ once: false }}
-            className="position-absolute z-0 img-fluid w-50 mx-auto"
+            className="position-absolute  z-3 blr img-fluid w-50 mx-auto"
             style={{
               left: "-25%",
               top: "25%",
@@ -97,7 +97,7 @@ function Portfolio() {
             }
             transition={{ duration: 2, delay: 0.3 }}
             viewport={{ once: false }}
-            className="position-absolute z-0 img-fluid w-50 mx-auto"
+            className="position-absolute z-3 blr img-fluid w-50 mx-auto"
             style={{
               left: "-25%",
               bottom: 0,
@@ -115,7 +115,7 @@ function Portfolio() {
             }
             transition={{ duration: 2, delay: 0.3 }}
             viewport={{ once: false }}
-            className="position-absolute z-0 img-fluid w-50 mx-auto"
+            className="position-absolute z-3 blr img-fluid w-50 mx-auto"
             style={{
               left: "-25%",
               bottom: "25%",

@@ -22,73 +22,80 @@ function Header() {
     );
   }, [open]);
   return (
-    <motion.div
-      className="Navbar py-4 fixed-top "
-      initial={{ opacity: 0, y: -50 }} // Initial opacity and scale
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1, delay: 0.6 }}
-      viewport={{ once: true }}
-    >
-      <div className="container ">
-        <div className="row m-0">
-          <div className="col-lg-4 col-6 ">
-            <Link
-              className="fs-2 fw-bolder text-light  text-uppercase"
-              to="/home"
-            >
-              Portmann
-            </Link>
-          </div>
-          <div className="col-8 justify-content-end  align-self-center d-lg-block d-none">
-            <div className="d-flex justify-content-end">
+    <>
+      <motion.div
+        className={"Navbar py-4 position-fixed top-0 w-100 start-0 "}
+        style={!open ? { zIndex: "3" } : { zIndex: "200" }}
+        initial={{ opacity: 0, y: -50 }} // Initial opacity and scale
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.6 }}
+        viewport={{ once: true }}
+      >
+        <div className="container ">
+          <div className="row m-0">
+            <div className="col-lg-4 col-6 ">
               <Link
-                className="fs-5  fw-normal   fw-light  text-white px-3 mx-1 py-2"
+                className="fs-2 fw-bolder text-light  text-uppercase"
                 to="/home"
               >
-                Home
-              </Link>{" "}
-              <Link
-                className="fs-5  fw-normal   fw-light  text-white px-3 mx-1 py-2"
-                to="/portfolio"
-              >
-                Portfolio
-              </Link>
-              <Link
-                className="fs-5  fw-normal  text-white px-3 mx-1 py-2"
-                to="/about"
-              >
-                Edward Adeventure
-              </Link>
-              <Link className="fs-5 fw-normal text-white px-4 ms-5 bg-gradient py-2 border border-0 mainbtn align-self-center rounded-2" to={'/contact'}>
-                Contact
+                Portmann
               </Link>
             </div>
-          </div>
-          <div className="col-6 d-lg-none d-block d-flex justify-content-end align-self-center">
-            {!open ? (
-              <i
-                class="fa fa-bars fs-2 text-gradient"
-                aria-hidden="true"
-                onClick={() => setopen(!open)}
-              ></i>
-            ) : (
-              <i
-                class="fa fa-xmark fs-2 text-gradient fa-rotate-90"
-                aria-hidden="true"
-                onClick={() => setopen(!open)}
-              ></i>
-            )}
+            <div className="col-8 justify-content-end  align-self-center d-lg-block d-none">
+              <div className="d-flex justify-content-end">
+                <Link
+                  className="fs-5  fw-normal   fw-light  text-white px-3 mx-1 py-2"
+                  to="/home"
+                >
+                  Home
+                </Link>{" "}
+                <Link
+                  className="fs-5  fw-normal   fw-light  text-white px-3 mx-1 py-2"
+                  to="/portfolio"
+                >
+                  Portfolio
+                </Link>
+                <Link
+                  className="fs-5  fw-normal  text-white px-3 mx-1 py-2"
+                  to="/about"
+                >
+                  Edward Adeventure
+                </Link>
+                <Link
+                  className="fs-5 fw-normal text-white px-4 ms-5 bg-gradient py-2 border border-0 mainbtn align-self-center rounded-2"
+                  to={"/contact"}
+                >
+                  Contact
+                </Link>
+              </div>
+            </div>
+            <div className="col-6 d-lg-none d-block d-flex justify-content-end align-self-center">
+              {!open ? (
+                <i
+                  class="fa fa-bars fs-2 text-gradient"
+                  aria-hidden="true"
+                  onClick={() => setopen(!open)}
+                ></i>
+              ) : (
+                <i
+                  class="fa fa-xmark fs-2 text-gradient fa-rotate-90"
+                  aria-hidden="true"
+                  onClick={() => setopen(!open)}
+                ></i>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>{" "}
       <motion.div
         animate={open ? "open" : "closed"}
         initial={{ opacity: 0 }}
         variants={variants}
+        style={{ zIndex: "100" }}
         transition={{ duration: 0.2, delay: 0 }}
-        className="bg-black vh-100 pt-5 shadow border-bottom border-1 border-dark w-100 py-3 position-absolute justify-content-end  align-self-center d-lg-none d-block"
+        className="bg-black vh-100 pt-5 mt-5  shadow border-bottom border-1 border-dark w-100 py-3 position-fixed justify-content-end  align-self-center d-lg-none d-block"
       >
-        <div className="d-block container">
+        <div className="d-block container ">
           <Link
             className="fs-5 item fw-normal  d-block  fw-light  text-white ps-3 mx-1 py-2"
             to="/home"
@@ -122,7 +129,7 @@ function Header() {
           </Link>
         </div>
       </motion.div>
-    </motion.div>
+    </>
   );
 }
 

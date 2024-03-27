@@ -123,3 +123,6 @@ body {
 i {
   transition: all 0.5s ease;
 }
+.blr{
+  mix-blend-mode: screen !important;
+}

@@ -29,7 +29,7 @@ function About() {
             }
             transition={{ duration: 2, delay: 0.3 }}
             viewport={{ once: true }}
-            className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
+            className="position-absolute z-3 blr img-fluid w-50 mx-auto d-md-none d-block"
             style={{
               left: "20%",
               marginTop: "-10%",
@@ -46,19 +46,19 @@ function About() {
               <Spline scene="https://prod.spline.design/ALphKMEd51vtlgWx/scene.splinecode" />
             </motion.div>{" "}
             <motion.div
-              className="col-lg-6 col-12 ps-lg-5 position-relative z-3"
+              className="col-lg-6 col-12 ps-lg-5 position-relative z-2"
               initial={{ opacity: 0, x: 50 }} // Initial opacity and scale
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.6 }}
               viewport={{ once: true }}
             >
               <div className="display-5 pb-4 text-light fw-bolder text-uppercase">
-                <span className="text-gradient position-relative z-3 display-3 fw-bolder text-uppercase">
+                <span className="text-gradient position-relative z-2 display-3 fw-bolder text-uppercase">
                   {" "}
                   Edward Adventure
                 </span>
               </div>
-              <p className="fs-5 position-relative z-3 text-light">
+              <p className="fs-5 position-relative z-2 text-light">
                 I created an interactive post apocalyptic webserie. Realised
                 from different animation technique like 3d and stop motion. You
                 will be immersed in this universe next to edward, where you can

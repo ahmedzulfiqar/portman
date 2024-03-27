@@ -25,14 +25,14 @@ function Home() {
             }
             transition={{ duration: 2, delay: 0.3 }}
             viewport={{ once: true }}
-            className="position-absolute z-0 img-fluid w-50 mx-auto d-md-none d-block"
+            className="position-absolute z-3 blr img-fluid w-50 mx-auto d-md-none d-block"
             style={{
               left: "25%",
               top: "5%",
             }}
           />
           <motion.div
-            className="col-lg-6 col-12 px-lg-3 px-0 position-relative z-3"
+            className="col-lg-6 col-12 px-lg-3 px-0 position-relative z-2"
             initial={{ opacity: 0, x: -100 }} // Initial opacity and scale
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 1.4 }}
