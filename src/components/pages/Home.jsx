@@ -46,20 +46,16 @@ function Home() {
               </span>
             </div>
             <div className="fs-5 py-4 text-light opacity-75 d-lg-block d-none">
-              Welcome to a world where creativity knows no bounds. Dive into the
-              realm of digital drawing technique alongside timeless classics
-              like painting, charcoal, pencil, and watercolor. Delve deeper into
-              the sculptor's realm with materials as varied as plaster band and
-              clay, where every stroke and molding breathe life into your
-              imagination.
+              Immerse yourself in the realm of the artist, an animator,
+              sculptor, visual artist and 3D generalist. Discover original
+              stories with unique designs made from various materials like latex
+              or modeling clay.
             </div>
             <div className="fs-6 py-3 text-light opacity-75 d-lg-none d-block small">
-              Welcome to a world where creativity knows no bounds. Dive into the
-              realm of digital drawing technique alongside timeless classics
-              like painting, charcoal, pencil, and watercolor. Delve deeper into
-              the sculptor's realm with materials as varied as plaster band and
-              clay, where every stroke and molding breathe life into your
-              imagination.
+              Immerse yourself in the realm of the artist, an animator,
+              sculptor, visual artist and 3D generalist. Discover original
+              stories with unique designs made from various materials like latex
+              or modeling clay.
             </div>
             <Link
               className="btn btn-lg mt-1 bg-gradient rounded-1 border-0 btn-primary"

@@ -16,12 +16,7 @@ const portfoliodata = [
 
     name: " Croc or deal Collection",
   },
-  {
-    image:
-      "https://cdnb.artstation.com/p/assets/images/images/057/696/103/large/batslayeur-itit-3.jpg?1672390978",
-
-    name: " Croc or deal Collection",
-  },
+  
   {
     image:
       "https://cdnb.artstation.com/p/assets/images/images/057/696/091/large/batslayeur-the-new-mind-v1-1.jpg?1672390904",

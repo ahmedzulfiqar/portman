@@ -18,14 +18,12 @@ function Portfolio() {
             viewport={{ once: true }}
           >
             <div className="display-2 text-light fw-bolder d-md-block d-none">
-              Explore My Artistic
               <span className="text-gradient text-uppercase fw-bolder">
                 {" "}
                 Portfolio
               </span>
             </div>{" "}
             <div className="display-6 pb-3 text-light fw-bolder d-md-none d-block">
-              Explore My Artistic
               <span className="text-gradient text-uppercase fw-bolder">
                 {" "}
                 Portfolio

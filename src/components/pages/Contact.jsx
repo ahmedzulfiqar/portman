@@ -31,19 +31,14 @@ function Contact() {
             </div>
             <p className="fs-5 text-light d-md-block d-none">
               i'd love to help you out with any queries or service-related
-              information at the earliest. Please drop in a line.
+              information at the earliest. 
             </p>
             <p className="text-start text-light small d-md-none d-block">
               i'd love to help you out with any queries or service-related
-              information at the earliest. Please drop in a line.
+              information at the earliest.
             </p>
-            <div className="fs-3 mt-lg-4 text-light d-md-block d-none">
-              Contact me on Email
-            </div>
-            <div className="fs-5 mt-lg-4 text-light d-md-none d-none">
-              Contact me on Email
-            </div>
-            <div className="fs-4 text-gradient mt-1 d-md-block d-none">
+           
+            <div className="fs-4 text-gradient mt-2 mb-2 d-md-block d-none">
               <i
                 class="fa fa-envelope text-gradient pe-3"
                 aria-hidden="true"
@@ -57,13 +52,8 @@ function Contact() {
               ></i>
               remi.portmann2002@gmail.com
             </div>
-            <div className="fs-3 mt-lg-4 text-light  d-md-block d-none">
-              Contact me by phone.
-            </div>
-            <div className="fs-5 mt-lg-4 text-light  d-md-none d-none">
-              Contact me by phone.
-            </div>
-            <div className="fs-4 text-gradient mt-1  d-md-block d-none">
+          
+            <div className="fs-4 text-gradient mt-3  d-md-block d-none">
               <i class="fa fa-phone  text-gradient pe-3" aria-hidden="true"></i>
               06 17 58 73 73
             </div>{" "}
