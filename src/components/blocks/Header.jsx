@@ -93,7 +93,7 @@ function Header() {
         variants={variants}
         style={{ zIndex: "100" }}
         transition={{ duration: 0.2, delay: 0 }}
-        className="bg-black vh-100 pt-5 mt-5  shadow border-bottom border-1 border-dark w-100 py-3 position-fixed justify-content-end  align-self-center d-lg-none d-block"
+        className="bg-black vh-100 pt-5 mt-5  shadow border-bottom border-1 border-dark w-100 py-3 position-fixed start-0  justify-content-end  align-self-center d-lg-none d-block"
       >
         <div className="d-block container ">
           <Link

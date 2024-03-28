@@ -31,10 +31,10 @@ function About() {
             viewport={{ once: true }}
             className="position-absolute z-3 blr img-fluid w-50 mx-auto d-md-none d-block"
             style={{
-              left: "20%",
-              marginTop: "-10%",
+              left: "25%",
+              top: "5%",
             }}
-          />{" "}
+          />
           <div className="row m-0 h-100 align-items-center justify-content-center ">
             <motion.div
               className="col-lg-6 col-12 d-lg-block d-none h-75  "
