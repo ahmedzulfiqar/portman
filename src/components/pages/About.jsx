@@ -52,8 +52,8 @@ function About() {
               transition={{ duration: 1, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="display-5 pb-4 text-light fw-bolder text-uppercase">
-                <span className="text-gradient position-relative z-2 display-3 fw-bolder text-uppercase">
+              <div className="display-5 pb-4 text-light fw-bolder pt-5 text-uppercase">
+                <span className="text-gradient position-relative mt-5 z-2 display-3 fw-bolder text-uppercase">
                   {" "}
                   Edward Adventure
                 </span>
