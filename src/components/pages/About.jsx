@@ -13,29 +13,10 @@ function About() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   return (
     <>
-   
       <div className=" vh-100 " id="section2">
         <div className="container h-100">
           {" "}
-          <motion.video
-            onLoadedData={() => setIsVideoLoaded(true)}
-            src={video1}
-            loop={true}
-            autoPlay={true}
-            muted={true}
-            initial={{ opacity: 0, x: -100 }}
-            animate={
-              isVideoLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
-            }
-            transition={{ duration: 2, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="position-absolute z-3 blr img-fluid w-50 mx-auto d-md-none d-block"
-            style={{
-              left: "25%",
-              top: "5%",
-            }}
-          />
-          <div className="row m-0 h-100 align-items-center justify-content-center ">
+          <div className="row m-0 h-100  align-items-center justify-content-center ">
             <motion.div
               className="col-lg-6 col-12 d-lg-block d-none h-75  "
               initial={{ opacity: 0, scaleX: 1.5 }} // Initial opacity and scale
@@ -52,8 +33,22 @@ function About() {
               transition={{ duration: 1, delay: 0.6 }}
               viewport={{ once: true }}
             >
-              <div className="display-5 pb-4 text-light fw-bolder pt-5 text-uppercase">
-                <span className="text-gradient position-relative mt-5 z-2 display-3 fw-bolder text-uppercase">
+              <motion.video
+                onLoadedData={() => setIsVideoLoaded(true)}
+                src={video1}
+                loop={true}
+                autoPlay={true}
+                muted={true}
+                initial={{ opacity: 0, x: -100 }}
+                animate={
+                  isVideoLoaded ? { opacity: 1, x: 0 } : { opacity: 0, x: -100 }
+                }
+                transition={{ duration: 2, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="position-relative z-3 blr img-fluid w-50 mx-auto d-md-none d-block"
+              />
+              <div className="display-5 pb-4 text-light fw-bolder text-uppercase">
+                <span className="text-gradient position-relative  z-2 display-3 fw-bolder text-uppercase">
                   {" "}
                   Edward Adventure
                 </span>
