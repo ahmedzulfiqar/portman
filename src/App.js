@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Routerfile from "./components/routes/Routerfile";
-import image1 from "./components/media/428451987_931471568641067_2922994258616064842_n (1).png";
+import image1 from "./components/media/loading spiral.png";
 function App() {
   const [loading, setloading] = useState(false);
   useEffect(() => {
@@ -18,7 +18,8 @@ function App() {
             <img
               src={image1}
               alt=""
-              className="img-fluid  mx-auto w-25 absolute2"
+              style={{ width: "18%" }}
+              className="img-fluid  mx-auto  p-lg-5 absolute2"
             />
           </div>
         ) : (

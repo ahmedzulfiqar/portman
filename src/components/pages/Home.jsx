@@ -72,7 +72,7 @@ function Home() {
             viewport={{ once: true }}
           >
             {" "}
-            <Spline scene="https://prod.spline.design/ALphKMEd51vtlgWx/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/S8NewS6FGfCp6mAe/scene.splinecode" />
           </motion.div>
         </div>
       </div>

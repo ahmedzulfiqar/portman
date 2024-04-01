@@ -24,7 +24,7 @@ function About() {
               transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
             >
-              <Spline scene="https://prod.spline.design/ALphKMEd51vtlgWx/scene.splinecode" />
+              <Spline scene="https://prod.spline.design/S8NewS6FGfCp6mAe/scene.splinecode" />
             </motion.div>{" "}
             <motion.div
               className="col-lg-6 col-12 ps-lg-5 position-relative z-2"

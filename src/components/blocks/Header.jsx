@@ -59,7 +59,7 @@ function Header() {
                   className="fs-5  fw-normal  text-white px-3 mx-1 py-2"
                   to="/about"
                 >
-                  Edward Adeventure
+                  Edward Adventure
                 </Link>
                 <Link
                   className="fs-5 fw-normal text-white px-4 ms-5 bg-gradient py-2 border border-0 mainbtn align-self-center rounded-2"
