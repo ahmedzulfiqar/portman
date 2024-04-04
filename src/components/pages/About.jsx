@@ -71,7 +71,73 @@ function About() {
           </div>
         </div>
       </div>
-      <motion.div className=" vh-100" id="section3">
+      <motion.div className="vh-100 d-md-block d-none" id="section3">
+        <div className=" h-100">
+          <div className="row m-0 h-100 align-items-center justify-content-center ">
+            <motion.div
+              className="col-12 text-center"
+              initial={{ opacity: 0, x: 50 }} // Initial opacity and scale
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <div className="display-5 pb-4 text-light fw-bolder text-uppercase">
+                <span className="text-gradient display-3 fw-bolder text-uppercase">
+                  {" "}
+                  My Portfolio
+                </span>
+              </div>
+              <p className="fs-5 text-light">
+                Here is a selection of my works, exhibited in my studio.
+              </p>
+              <Swiper
+                grabCursor={true}
+                centeredSlides={true}
+                loop={true}
+                className="mySwiper py-5 mb-3"
+                slidesPerView={"1"}
+                breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                  },
+                  1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                  },
+                }}
+              >
+                {portfoliodata.map((i) => {
+                  return (
+                    <SwiperSlide>
+                      <img
+                        src={i.image}
+                        className="img-fluid"
+                        style={{ height: "40vh" }}
+                      />
+                    </SwiperSlide>
+                  );
+                })}
+              </Swiper>
+              <Link
+                className="btn btn-lg  bg-gradient rounded-1 border-0 btn-primary"
+                to="/portfolio"
+              >
+                See More
+              </Link>{" "}
+            </motion.div>
+          </div>
+        </div>
+      </motion.div>
+      <motion.div
+        className="d-md-none d-block"
+        id="section3"
+        style={{ minHeight: "100vh" }}
+      >
         <div className=" h-100">
           <div className="row m-0 h-100 align-items-center justify-content-center ">
             <motion.div
