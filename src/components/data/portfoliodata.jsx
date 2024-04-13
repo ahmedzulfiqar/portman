@@ -156,29 +156,15 @@ const portfoliodata = [
     name: " Croc or deal Collection",
   },
 ];
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 
-// Manually shuffled sequence
-const manuallyShuffledPortfolioData = [
-  portfoliodata[5],
-  portfoliodata[0],
-  portfoliodata[15],
-  portfoliodata[6],
-  portfoliodata[3],
-  portfoliodata[8],
-  portfoliodata[12],
-  portfoliodata[9],
-  portfoliodata[7],
-  portfoliodata[1],
-  portfoliodata[11],
-  portfoliodata[4],
-  portfoliodata[2],
-  portfoliodata[14],
-  portfoliodata[16],
-  portfoliodata[17],
-  portfoliodata[10],
-  portfoliodata[13],
-];
+// Shuffle the portfoliodata array
+shuffle(portfoliodata);
 
-console.log(manuallyShuffledPortfolioData);
-
-export default manuallyShuffledPortfolioData;
+export default portfoliodata;
